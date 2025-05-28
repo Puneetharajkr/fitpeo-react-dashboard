@@ -34,10 +34,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 A responsive and interactive **React-based Dashboard** designed for a healthcare application. This dashboard provides real-time insights into patient metrics, appointment tracking, billing information, and system statistics. Built with **React**, **Tailwind CSS**, and **Recharts**, it ensures both usability and scalability.
 
 ## Live Demo
+Deployed Vercel Live URL: https://react-dashboard-ex-puneetharaj-k-rs-projects.vercel.app/
 
-[https://github.com/Puneetharajkr/fitpeo-react-dashboard.git
-
-]()
+GitHub Repo URL: https://github.com/Puneetharajkr/fitpeo-react-dashboard.git
 
 ---
 
