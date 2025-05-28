@@ -8,63 +8,160 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Healthcare Dashboard Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A responsive and interactive **React-based Dashboard** designed for a healthcare application. This dashboard provides real-time insights into patient metrics, appointment tracking, billing information, and system statistics. Built with **React**, **Tailwind CSS**, and **Recharts**, it ensures both usability and scalability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Live Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[https://github.com/Puneetharajkr/fitpeo-react-dashboard.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+]()
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Patient Overview Cards** — Track total patients, appointments, and billing.
+- **Appointment Scheduler** — View and manage upcoming appointments.
+- **Analytics & Charts** — Visual insights using `Recharts`.
+- **Doctor/Patient Profiles** — UI sections for managing individual records.
+- **Navigation Sidebar** — Easy navigation with active route highlighting.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Folder Structure
 
-### Analyzing the Bundle Size
+src/
+├── App.js
+├── index.js
+├── components/
+│   ├── Header/
+│   │   ├── Header.js
+│   │   └── Header.css
+│   ├── Sidebar/
+│   │   ├── Sidebar.js
+│   │   └── Sidebar.css
+│   ├── DashboardMain/
+│   │   ├── DashboardMain.js
+│   │   └── DashboardMain.css
+│   ├── AnatomySection/
+│   │   ├── AnatomySection.js
+│   │   └── AnatomySection.css
+│   ├── HealthStatusCards/
+│   │   ├── HealthStatusCards.js
+│   │   ├── HealthCard.js
+│   │   └── HealthStatusCards.css
+│   ├── CalendarView/
+│   │   ├── CalendarView.js
+│   │   └── CalendarView.css
+│   ├── UpcomingSchedule/
+│   │   ├── UpcomingSchedule.js
+│   │   ├── AppointmentGroup.js
+│   │   └── UpcomingSchedule.css
+│   ├── ActivityFeed/
+│   │   ├── ActivityFeed.js
+│   │   └── ActivityFeed.css
+│   └── SimpleAppointmentCard/
+│       ├── SimpleAppointmentCard.js
+│       └── SimpleAppointmentCard.css
+├── data/
+│   ├── navigation.js
+│   ├── healthData.js
+│   ├── appointments.js
+│   └── calendar.js
+├── styles/
+│   ├── App.css
+│   └── index.css
+├── assets/
+│   ├── images/
+│   │   ├── body-outline.png
+│   │   └── user-avatar.png
+│   └── icons/
+│       ├── search.svg
+│       ├── bell.svg
+│       └── plus.svg
+└── utils/
+    └── constants.j
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used
 
-### Making a Progressive Web App
+- **React** – JavaScript Library for UI
+- **React Router DOM** – Routing functionality
+- **JavaScript** - Programming Language
+- **Vercel** – For deployment
+- **Git** -Version Cntrol
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Getting Started (Local Setup)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Clone the repository**`git clone https://github.com/yourusername/healthcare-dashboard.git
+   cd healthcare-dashboard`
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Install dependencies**
+   npm install
+3. **Run the application**
+   npm start
+4. Visit `http://localhost:3000` in your browser.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment Instructions
+
+This project is deployed using  **Vercel** .
+
+### Deploy Steps:
+
+* Connect your GitHub repo to Vercel.
+* Select the root folder of your React app.
+* Use default settings, build command: `npm run build`, output: `build/`
+* Wait for deployment to complete.
+
+---
+
+## Submission Checklist
+
+Developed a React-based Healthcare Dashboard.
+
+Used Git and GitHub for version control.
+
+Pushed project to public GitHub repository.
+
+Deployed app on Vercel.
+
+Stored resume in a separate folder (not in code repo).
+
+Filled out the submission form with correct links.
+
+---
+
+## Author
+
+**Puneetha Raj**
+
+ [puneetharajkr123@gmail.com]()
+
+[LinkedIn Profile](https://www.linkedin.com/in/puneetharaj-k-r-49929a239)
